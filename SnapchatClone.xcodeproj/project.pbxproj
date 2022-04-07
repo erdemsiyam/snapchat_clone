@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9AB4C087757BC8F12B848047 /* Pods_SnapchatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCA473ACA747856D63CD343 /* Pods_SnapchatClone.framework */; };
+		E8CBD5F827FF6E02005A2B72 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */; };
+		E8CBD5FB27FF6F89005A2B72 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */; };
 		E8F9680627FDFEEE000D32D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680527FDFEEE000D32D0 /* AppDelegate.swift */; };
 		E8F9680827FDFEEE000D32D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680727FDFEEE000D32D0 /* SceneDelegate.swift */; };
 		E8F9680A27FDFEEE000D32D0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680927FDFEEE000D32D0 /* SignInViewController.swift */; };
@@ -25,6 +27,8 @@
 		1CCA473ACA747856D63CD343 /* Pods_SnapchatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EAC677DFED564E71763C5E /* Pods-SnapchatClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatClone.debug.xcconfig"; path = "Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone.debug.xcconfig"; sourceTree = "<group>"; };
 		48491626FB6EB52B12898A8C /* Pods-SnapchatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatClone.release.xcconfig"; path = "Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone.release.xcconfig"; sourceTree = "<group>"; };
+		E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E8F9680227FDFEEE000D32D0 /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F9680527FDFEEE000D32D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F9680727FDFEEE000D32D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E8CBD5F627FF6AD9005A2B72 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E8CBD5F927FF6F80005A2B72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E8F967F927FDFEEE000D32D0 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +110,8 @@
 		E8F9680427FDFEEE000D32D0 /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				E8CBD5F927FF6F80005A2B72 /* Model */,
+				E8CBD5F627FF6AD9005A2B72 /* Repository */,
 				E8F9682327FE28E3000D32D0 /* Delegates */,
 				E8F9682227FE28D1000D32D0 /* ViewControllers */,
 				E8F9680B27FDFEEE000D32D0 /* Main.storyboard */,
@@ -246,6 +268,8 @@
 				E8F9681D27FE288C000D32D0 /* FeedViewController.swift in Sources */,
 				E8F9682627FE3113000D32D0 /* SnapViewController.swift in Sources */,
 				E8F9680827FDFEEE000D32D0 /* SceneDelegate.swift in Sources */,
+				E8CBD5F827FF6E02005A2B72 /* UserRepository.swift in Sources */,
+				E8CBD5FB27FF6F89005A2B72 /* UserModel.swift in Sources */,
 				E8F9682127FE28A6000D32D0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

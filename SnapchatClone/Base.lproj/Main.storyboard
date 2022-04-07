@@ -164,6 +164,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="SOB-6p-92b"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="TA8-jF-LC8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqY-1W-dXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +240,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="zMR-ti-xvo">
             <objects>
-                <tabBarController id="Sse-rV-9oK" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarId" id="Sse-rV-9oK" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9EL-mX-8DX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
