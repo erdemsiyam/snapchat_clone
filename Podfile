@@ -7,8 +7,13 @@ target 'SnapchatClone' do
 
   # Pods for SnapchatClone
 
+pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Core'
 pod 'Firebase/Storage'
+pod 'SDWebImage'
+pod 'ImageSlideshow', '~> 1.9.0'
+pod 'ImageSlideshow/Kingfisher'
+
 end

@@ -10,6 +10,9 @@
 		9AB4C087757BC8F12B848047 /* Pods_SnapchatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCA473ACA747856D63CD343 /* Pods_SnapchatClone.framework */; };
 		E8CBD5F827FF6E02005A2B72 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */; };
 		E8CBD5FB27FF6F89005A2B72 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */; };
+		E8CCD2EC2800B12C00D57E3B /* FeedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CCD2EB2800B12C00D57E3B /* FeedCellTableViewCell.swift */; };
+		E8CCD2EF2800B89D00D57E3B /* SnapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CCD2EE2800B89D00D57E3B /* SnapRepository.swift */; };
+		E8CCD2F12800BA5700D57E3B /* SnapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CCD2F02800BA5700D57E3B /* SnapModel.swift */; };
 		E8F9680627FDFEEE000D32D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680527FDFEEE000D32D0 /* AppDelegate.swift */; };
 		E8F9680827FDFEEE000D32D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680727FDFEEE000D32D0 /* SceneDelegate.swift */; };
 		E8F9680A27FDFEEE000D32D0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9680927FDFEEE000D32D0 /* SignInViewController.swift */; };
@@ -29,6 +32,9 @@
 		48491626FB6EB52B12898A8C /* Pods-SnapchatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatClone.release.xcconfig"; path = "Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone.release.xcconfig"; sourceTree = "<group>"; };
 		E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E8CCD2EB2800B12C00D57E3B /* FeedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellTableViewCell.swift; sourceTree = "<group>"; };
+		E8CCD2EE2800B89D00D57E3B /* SnapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapRepository.swift; sourceTree = "<group>"; };
+		E8CCD2F02800BA5700D57E3B /* SnapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapModel.swift; sourceTree = "<group>"; };
 		E8F9680227FDFEEE000D32D0 /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F9680527FDFEEE000D32D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F9680727FDFEEE000D32D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E8CBD5F727FF6E02005A2B72 /* UserRepository.swift */,
+				E8CCD2EE2800B89D00D57E3B /* SnapRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -85,8 +92,17 @@
 			isa = PBXGroup;
 			children = (
 				E8CBD5FA27FF6F89005A2B72 /* UserModel.swift */,
+				E8CCD2F02800BA5700D57E3B /* SnapModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E8CCD2ED2800B15B00D57E3B /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E8CCD2EB2800B12C00D57E3B /* FeedCellTableViewCell.swift */,
+			);
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 		E8F967F927FDFEEE000D32D0 = {
@@ -110,6 +126,7 @@
 		E8F9680427FDFEEE000D32D0 /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				E8CCD2ED2800B15B00D57E3B /* ViewCells */,
 				E8CBD5F927FF6F80005A2B72 /* Model */,
 				E8CBD5F627FF6AD9005A2B72 /* Repository */,
 				E8F9682327FE28E3000D32D0 /* Delegates */,
@@ -263,12 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F9680A27FDFEEE000D32D0 /* SignInViewController.swift in Sources */,
+				E8CCD2EF2800B89D00D57E3B /* SnapRepository.swift in Sources */,
 				E8F9681F27FE289B000D32D0 /* UploadViewController.swift in Sources */,
 				E8F9680627FDFEEE000D32D0 /* AppDelegate.swift in Sources */,
 				E8F9681D27FE288C000D32D0 /* FeedViewController.swift in Sources */,
 				E8F9682627FE3113000D32D0 /* SnapViewController.swift in Sources */,
+				E8CCD2EC2800B12C00D57E3B /* FeedCellTableViewCell.swift in Sources */,
 				E8F9680827FDFEEE000D32D0 /* SceneDelegate.swift in Sources */,
 				E8CBD5F827FF6E02005A2B72 /* UserRepository.swift in Sources */,
+				E8CCD2F12800BA5700D57E3B /* SnapModel.swift in Sources */,
 				E8CBD5FB27FF6F89005A2B72 /* UserModel.swift in Sources */,
 				E8F9682127FE28A6000D32D0 /* SettingsViewController.swift in Sources */,
 			);
